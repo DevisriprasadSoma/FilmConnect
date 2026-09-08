@@ -1,0 +1,23 @@
+# Environment variables and secrets
+.env
+.env.*
+*.env
+*.pem
+
+# Python / Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.db
+*.sqlite
+*.sqlite3
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
