@@ -22,6 +22,15 @@ app.add_middleware(
 )
 
 
+@app.get("/")
+def root():
+    return {
+        "status": "online",
+        "service": "FilmConnect API",
+        "docs": "/docs"
+    }
+
+
 # --- Pydantic Schemas ---
 
 class UserCreate(BaseModel):

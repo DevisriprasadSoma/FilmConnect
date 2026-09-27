@@ -1,4 +1,5 @@
-const API = "http://localhost:8000";
+const rawApi = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API = rawApi.replace(/\/+$/, "");
 
 export async function fetchUsers(params = {}) {
   const url = new URL(`${API}/users`);
